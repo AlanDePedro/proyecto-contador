@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(17, 0, 17);
+    background-image: url(../images/bg-stars.svg);
+}
+/* lanzamiento */
+.launching-soon{
+    background-image: url(../images/bg-stars.svg);
+}
+#launching-soon, #countdown {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+  }
+  
+ /* Contenedor del contador */
+#countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  background-image: url(../images/bg-stars.svg);
+  margin-top: 300px;
+  justify-content: space-evenly;
+}
+
+/* Contenedores individuales del contador */
+.countdown-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Display del valor del contador */
+.countdown-value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 10%;
+  margin: 5px;
+  background-color: #240027;
+  color: #ffffff;
+  box-shadow: 0 0 0 60px #240027;
+  text-align: center;
+}
+
+/* Etiqueta del contador */
+.countdown-label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Estilos para el valor "días" del contador */
+#days {
+  font-size: 7rem;
+  margin-left: 50px;
+}
+
+/* Estilos para el primer valor del contador (días) */
+.countdown-container > .countdown-value:nth-child(1) {
+  margin-bottom: 25px;
+}
+
+/* Estilos para los valores "horas", "minutos" y "segundos" del contador */
+#hours, #minutes, #seconds {
+  font-size: 7rem;
+  margin-left: 50px;
+}
+
+/* Estilos para todos los valores del contador excepto el último */
+#countdown .countdown-value:not(:last-child) {
+  margin-right: 50px;
+}
+  /* texto de credito */
+.attribution { 
+    font-size: 20px;
+    text-align: center;
+    margin-top: 100px;
+   
+}
+.attribution{
+    color: white;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+/* footer */
+.icons {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-image: url(../images/pattern-hills.svg);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    }
+    .icons img {
+margin-left: 50px;
+    }
+
+
+    @media (max-width: 1200px) {
+      /* Contenedor del contador */
+      #countdown {
+          margin-top: 200px;
+      }
+  
+      /* Estilos para el valor "días" del contador */
+      #days {
+          font-size: 5rem;
+      }
+  
+      /* Estilos para el primer valor del contador (días) */
+      .countdown-container > .countdown-value:nth-child(1) {
+          margin-bottom: 20px;
+      }
+  
+      /* Estilos para los valores "horas", "minutos" y "segundos" del contador */
+      #hours, #minutes, #seconds {
+          font-size: 5rem;
+      }
+  
+      /* Estilos para todos los valores del contador excepto el último */
+      #countdown .countdown-value:not(:last-child) {
+          margin-right: 30px;
+      }
+  
+      /* texto de credito */
+      .attribution {
+          font-size: 18px;
+          margin-top: 50px;
+      }
+  
+      /* footer */
+      .icons img {
+          margin-left: 30px;
+      }
+  }
+  
+  @media (max-width: 768px) {
+      /* Contenedor del contador */
+      #countdown {
+          margin-top: 150px;
+      }
+  
+      /* Estilos para el valor "días" del contador */
+      #days {
+          font-size: 3rem;
+      }
+  
+      /* Estilos para el primer valor del contador (días) */
+      .countdown-container > .countdown-value:nth-child(1) {
+          margin-bottom: 15px;
+      }
+  
+      /* Estilos para los valores "horas", "minutos" y "segundos" del contador */
+      #hours, #minutes, #seconds {
+          font-size: 3rem;
+      }
+  
+      /* Estilos para todos los valores del contador excepto el último */
+      #countdown .countdown-value:not(:last-child) {
+          margin-right: 20px;
+      }
+  
+      /* texto de credito */
+      .attribution {
+          font-size: 16px;
+          margin-top: 30px;
+      }
+  
+      /* footer */
+      .icons img {
+          margin-left: 20px;
+      }
+  }
+  
+  @media (max-width: 480px) {
+      /* Contenedor del contador */
+      #countdown {
+          margin-top: 100px;
+      }
+  
+      /* Estilos para el valor "días" del contador */
+      #days {
+          font-size: 2rem;
+      }
+  
+      /* Estilos para el primer valor del contador (días) */
+      .countdown-container > .countdown-value:nth-child(1) {
+          margin-bottom: 10px;
+      }
+  
+      /* Estilos para los valores "horas", "minutos" y "segundos" del contador */
+      #hours, #minutes, #seconds {
+          font-size: 2rem;
+      }
+  
+      /* Estilos para todos los valores del contador excepto el último */
+      #countdown .countdown-value:not(:last-child) {
+          margin-right: 10px;
+      }
+  
+      /* texto de credito */
+      .attribution {
+          font-size: 14px;
+          margin-top: 20px;
+      }
+  
+      /* footer */
+      .icons img {
+          margin-left: 10px;
+      }
+  }
